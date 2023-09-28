@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #0074d9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#meme-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meme {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.meme img {
+    max-width: 100%;
+    height: auto;
+}
+
+.meme .top-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    pointer-events: none;
+}
+
+.meme .bottom-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    pointer-events: none;
+}
