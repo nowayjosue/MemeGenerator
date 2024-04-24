@@ -67,7 +67,7 @@ button {
     top: 10px;
     left: 10px;
     right: 10px;
-    font-size: 20px;
+    font-size: 80px;
     color: white;
     text-shadow: 2px 2px 2px black;
     pointer-events: none;
@@ -78,7 +78,7 @@ button {
     bottom: 10px;
     left: 10px;
     right: 10px;
-    font-size: 20px;
+    font-size: 80px;
     color: white;
     text-shadow: 2px 2px 2px black;
     pointer-events: none;
