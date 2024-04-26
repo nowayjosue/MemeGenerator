@@ -83,3 +83,16 @@ button {
     text-shadow: 2px 2px 2px black;
     pointer-events: none;
 }
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff4136;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+}
