@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const topText = document.getElementById("top-text").value;
         const bottomText = document.getElementById("bottom-text").value;
 
+        // Create a new meme div
         const memeDiv = document.createElement("div");
         memeDiv.classList.add("meme");
 
@@ -26,21 +27,24 @@ document.addEventListener("DOMContentLoaded", function () {
         bottomTextElement.classList.add("bottom-text");
         bottomTextElement.innerText = bottomText;
 
+        // Create delete button
+        const deleteButton = document.createElement("button");
+        deleteButton.classList.add("delete-button");
+        deleteButton.innerText = "Delete";
+        deleteButton.addEventListener("click", function () {
+            memeDiv.remove();
+        });
+
         // Append elements to meme div
         memeDiv.appendChild(image);
         memeDiv.appendChild(topTextElement);
         memeDiv.appendChild(bottomTextElement);
+        memeDiv.appendChild(deleteButton);
 
         // Add meme to meme container
         memeContainer.appendChild(memeDiv);
 
         // Clear form inputs
         memeForm.reset();
-    });
-
-    memeContainer.addEventListener("click", function (e) {
-        if (e.target.classList.contains("meme")) {
-            e.target.remove();
-        }
     });
 });
